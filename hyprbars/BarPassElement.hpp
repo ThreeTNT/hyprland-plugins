@@ -17,6 +17,7 @@ class CBarPassElement : public IPassElement {
     virtual bool                needsLiveBlur();
     virtual bool                needsPrecomputeBlur();
     virtual std::optional<CBox> boundingBox();
+    virtual ePassElementType    type();
 
     virtual const char*         passName() {
         return "CBarPassElement";

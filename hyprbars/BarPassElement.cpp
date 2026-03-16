@@ -30,3 +30,7 @@ std::optional<CBox> CBarPassElement::boundingBox() {
 bool CBarPassElement::needsPrecomputeBlur() {
     return false;
 }
+
+ePassElementType CBarPassElement::type() {
+    return ePassElementType::EK_BORDER;
+}
